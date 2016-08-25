@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+.edit_submit{
+	width:100%;
+	background: #808040;
+	height: 40px;
+	margin-top: 5px;
+	font-size: 18px;
+}

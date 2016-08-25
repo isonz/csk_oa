@@ -1,0 +1,25 @@
+-----------初始化工作流-----------------
+DROP TABLE `act_evt_log`;
+DROP TABLE `act_ge_property`;
+DROP TABLE `act_hi_actinst`;
+DROP TABLE `act_hi_attachment`;
+DROP TABLE `act_hi_comment`;
+DROP TABLE `act_hi_detail`;
+DROP TABLE `act_hi_identitylink`;
+DROP TABLE `act_hi_procinst`;
+DROP TABLE `act_hi_taskinst`;
+DROP TABLE `act_hi_varinst`;
+DROP TABLE `act_id_membership`;
+DROP TABLE `act_id_user`;
+DROP TABLE `act_procdef_info`;
+DROP TABLE `act_re_model`;
+DROP TABLE `act_ru_event_subscr`;
+DROP TABLE `act_ru_identitylink`;
+DROP TABLE `act_ru_job`;
+DROP TABLE `act_ru_task`;
+DROP TABLE `act_ru_variable`;
+DROP TABLE `act_ru_execution`;
+DROP TABLE `act_re_procdef`;
+DROP TABLE `act_id_group`;
+DROP TABLE `act_ge_bytearray`;
+DROP TABLE `act_re_deployment`;

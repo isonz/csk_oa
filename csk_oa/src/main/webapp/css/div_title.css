@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+.div_title{
+	border-left:10px solid red; 
+	padding-left: 5px;
+	border-bottom: 1px solid green;
+	border-top: 1px solid green;
+}

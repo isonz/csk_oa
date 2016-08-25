@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+.div_list{
+	margin-bottom:4px;
+	border-bottom: 1px solid green;
+	border-top: 1px solid green;
+	background-color: #8080c0;
+	overflow: hidden;
+	vertical-align:middle;
+}
+.div_list_select{
+	float:left;
+	height:60px;
+	width:40px;
+	vertical-align:middle;
+	background-color: #800000;
+	padding: 5px 0 0 0;
+	overflow: hidden;
+}
+.div_list_content{
+	background-color: #8080c0;
+	padding: 5px 0 0 10px;
+	overflow: hidden;
+	height:60px;
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        
+	<!-- <import resource="dataSource.xml" /> -->
+	
+	<!-- <context:annotation-config /> -->
+	<!-- 当使用context:component-scan时，默认使用了context:annotation-config -->
+	<context:component-scan base-package="cn.ptp.oa"/>
+	<!--  
+	<bean id="myEmf" class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">
+        <property name="persistenceUnitName" value="org.hibernate.tutorial.jpa"/>
+    </bean>
+    -->
+    
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="loadTimeWeaver">
+            <bean class="org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver"/>
+        </property>
+        <property name="persistenceProvider">
+        	<bean class="org.hibernate.ejb.HibernatePersistence"/>
+        </property>
+        <property name="packagesToScan" value="cn.ptp.oa.domain" /> 
+        <property name="jpaProperties">
+        	<props>
+        	<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop> 
+        	<!-- <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>-->
+        	<prop key="hibernate.show_sql">true</prop>
+        	<prop key="hibernate.hbm2ddl.auto">update</prop>
+		</props>
+        </property> 
+        
+    </bean>
+
+	
+</beans>

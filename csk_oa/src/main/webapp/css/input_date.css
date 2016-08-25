@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+
+.input_date{
+	width:120px;
+}
+.input_edit_date{
+	width:100px;
+}
+.input_edit_time{
+	width:95px;
+}
