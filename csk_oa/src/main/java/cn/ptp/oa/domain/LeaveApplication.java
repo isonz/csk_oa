@@ -44,8 +44,8 @@ public class LeaveApplication implements Serializable{
 	@Column(name="startDate")
 	private Date startDate;
 	
-	transient private String part_start_date;
-	transient private String part_start_time;
+	transient private String part_start_date;	//用transient关键字标记的成员变量不参与序列化过程。
+	transient private String part_start_time;	//用transient关键字标记的成员变量不参与序列化过程。
 	
 	
 	@Temporal(TemporalType.TIMESTAMP)
